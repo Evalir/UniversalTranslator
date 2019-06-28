@@ -16,6 +16,6 @@ class InputHandler:
 
     def writeToFile(self, pathname: str, convertedUnits):
         ''' Writes the results to a file'''
-        osFile = open(pathname, 'w')
+        osFile = open(pathname, 'w', encoding="utf8")
         for convertedUnit in convertedUnits:
             osFile.write(convertedUnit + "\n")

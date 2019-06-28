@@ -14,7 +14,7 @@ def main(pathname: str, writepath: str):
     if writepath == '':
         print('please specify a path to write to.')
         return
-    oFile = open(pathname, 'r+')
+    oFile = open(pathname, 'r+', encoding="utf8")
     handler = inputHandler.InputHandler()
     units = handler.parseInput(oFile.read())
     converter = metricConverter.MetricConverter()
