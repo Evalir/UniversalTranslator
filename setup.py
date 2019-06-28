@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="unitrans-evalir",
-    version="0.0.1.6",
+    version="0.0.1.8",
     author="Enrique Ortiz",
     author_email="hi.evalir@gmail.com",
     description="Parses a file with a certain structure and converts to the desired metric unit.",

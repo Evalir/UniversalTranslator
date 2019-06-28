@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: unitrans-evalir
-Version: 0.0.1.6
+Version: 0.0.1.8
 Summary: Parses a file with a certain structure and converts to the desired metric unit.
 Home-page: https://github.com/Evalir/UniversalTranslator
 Author: Enrique Ortiz
