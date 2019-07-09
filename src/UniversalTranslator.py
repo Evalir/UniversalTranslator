@@ -8,7 +8,10 @@ from metricConverter import *
 @click.option('--writepath', help="path to file that will get written", default='output.txt')
 def main(pathname: str, writepath: str):
     if pathname == '':
-        print('please specify a path')
+        print('please specify a path to read from.')
+        return
+    if writepath == '':
+        print('please specify a path to write to.')
         return
     oFile = open(pathname, 'r+')
     handler = InputHandler()
