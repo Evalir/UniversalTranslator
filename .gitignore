@@ -1,3 +1,5 @@
 ut/
 .vscode/
 __pycache__
+dist/
+UniversalTranslator_evalir.egg-info
