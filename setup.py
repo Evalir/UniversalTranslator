@@ -3,16 +3,9 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-
-def parse_requirements(filename):
-    """Load requirements from a pip requirements file."""
-    lineiter = (line.strip() for line in open(filename))
-    return [line for line in lineiter if line and not line.startswith("#")]
-
-
 setuptools.setup(
     name="unitrans-evalir",
-    version="0.0.1.4",
+    version="0.0.1.5",
     author="Enrique Ortiz",
     author_email="hi.evalir@gmail.com",
     description="Parses a file with a certain structure and converts to the desired metric unit.",
