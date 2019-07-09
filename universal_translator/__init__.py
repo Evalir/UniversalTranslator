@@ -1,6 +1,7 @@
 import click
-from inputHandler import *
-from metricConverter import *
+import importlib
+from universal_translator import inputHandler
+from universal_translator import metricConverter
 
 
 @click.command()
@@ -14,12 +15,9 @@ def main(pathname: str, writepath: str):
         print('please specify a path to write to.')
         return
     oFile = open(pathname, 'r+')
-    handler = InputHandler()
+    handler = inputHandler.InputHandler()
     units = handler.parseInput(oFile.read())
-    converter = MetricConverter()
+    converter = metricConverter.MetricConverter()
     convertedUnits = converter.convert(units)
     handler.writeToFile(writepath, convertedUnits)
-
-
-if __name__ == '__main__':
-    main()
+    print('Done! ✨')
